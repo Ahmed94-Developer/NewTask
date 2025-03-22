@@ -81,15 +81,12 @@ import coil3.size.Scale
 import com.commandiron.compose_loading.Pulse
 import com.example.myapplication3.R
 import com.example.myapplication3.domain.entities.Result
-import com.example.myapplication3.view.ui.activities.home.components.ErrorMessage
-import com.example.myapplication3.view.ui.activities.home.components.LoadingNextPageItem
 import com.example.myapplication3.view.ui.activities.home.components.NowPlayingList
 import com.example.myapplication3.view.ui.activities.home.components.PopularList
 import com.example.myapplication3.view.ui.activities.home.components.UpComingList
 import com.example.myapplication3.view.viewModels.NowPlayingViewModel
 import com.example.myapplication3.view.viewModels.PopularViewModel
 import com.example.myapplication3.view.viewModels.UpComingViewModel
-import java.nio.file.Files.size
 
 @SuppressLint("RememberReturnType", "IntentWithNullActionLaunch")
 @Preview

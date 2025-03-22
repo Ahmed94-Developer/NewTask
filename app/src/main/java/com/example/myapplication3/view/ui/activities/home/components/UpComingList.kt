@@ -35,6 +35,7 @@ import androidx.paging.compose.LazyPagingItems
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.request.crossfade
+import coil3.request.error
 import coil3.size.Scale
 import com.commandiron.compose_loading.Pulse
 import com.example.myapplication3.R
@@ -94,6 +95,7 @@ fun UpComingList(upcomingPagingItem : LazyPagingItems<Result>){
                             model = ImageRequest.Builder(LocalContext.current)
                                 .data("https://image.tmdb.org/t/p/w500" + upcomingPagingItem[index]!!.posterPath!!)
                                 .crossfade(true)
+                                .error(R.drawable.noimage)
                                 .scale(scale = Scale.FIT)
                                 .build(),
                             contentDescription = "1213",

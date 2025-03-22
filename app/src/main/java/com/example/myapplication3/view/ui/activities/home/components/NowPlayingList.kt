@@ -35,6 +35,7 @@ import androidx.paging.compose.LazyPagingItems
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.request.crossfade
+import coil3.request.error
 import coil3.size.Scale
 import com.commandiron.compose_loading.Pulse
 import com.example.myapplication3.R
@@ -95,6 +96,7 @@ fun NowPlayingList(moviePagingItems: LazyPagingItems<Result>) {
                                 .data("https://image.tmdb.org/t/p/w500" + moviePagingItems[index]!!.posterPath!!)
                                 .crossfade(true)
                                 .scale(scale = Scale.FIT)
+                                .error(R.drawable.noimage)
                                 .build(),
                             contentDescription = "1213",
                             contentScale = ContentScale.FillWidth,

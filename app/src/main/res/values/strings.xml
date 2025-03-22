@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TheMovieDb</string>
+    <string name="app_name">TheMovieDbTask</string>
     <string name="base_url">https://api.themoviedb.org/3/movie/</string>
     <string name="required">هذا الحقل مطـلوب</string>
     <string name="enter_the_phone">أدخل رقم الهـاتـف</string>
