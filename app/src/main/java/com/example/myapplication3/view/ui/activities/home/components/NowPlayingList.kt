@@ -166,8 +166,8 @@ fun NowPlayingList(moviePagingItems: LazyPagingItems<Result>) {
                         item {
                             Pulse(
                                 size = DpSize(
-                                    width = 50.dp,
-                                    height = 50.dp
+                                    width = 200.dp,
+                                    height = 200.dp
                                 ),
                                 color = Color(0xff0d253f)
                             )
